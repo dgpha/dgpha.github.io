@@ -150,8 +150,6 @@ h2{font-size:clamp(1.9rem,3.6vw,3rem);font-weight:300;letter-spacing:-.04em;line
 .people .role{display:block;margin-top:44px;font-size:.92rem;font-weight:600;color:var(--green);transition:color .4s}
 .people li:hover .role{color:var(--leaf)}
 .people .name{display:block;font-size:clamp(1.6rem,2.4vw,2.1rem);font-weight:300;letter-spacing:-.03em;line-height:1.35}
-.people .lead-m{grid-column:span 2;background:var(--paper)}
-.people .lead-m .name{font-size:clamp(2.2rem,4vw,3.4rem)}
 
 /* ---------- 현장 사진 ---------- */
 .head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap}
@@ -364,7 +362,6 @@ footer{position:relative;overflow:hidden}
   .cb-facts div,.cb-facts div + div,.cb-steps li,.cb-steps li + li{padding:20px 12px 20px 0;border-left:0}
   .sc-nav{grid-template-columns:1fr 1fr}
   .people{grid-template-columns:1fr 1fr}
-  .people .lead-m{grid-column:span 2}
   .tri article,.tri article + article{padding:32px 0;border-left:0;border-bottom:1px solid var(--line)}
   .shots{grid-template-columns:1fr;max-width:360px;margin-inline:auto}
   .shots figure:nth-child(2){margin-top:0}
@@ -397,7 +394,6 @@ h2{font-weight:650;letter-spacing:-.045em;line-height:1.3}
 .wm{font-weight:800;letter-spacing:-.06em}
 .about .lead{font-weight:500;letter-spacing:-.035em;line-height:1.65}
 .people .name{font-weight:600;letter-spacing:-.04em}
-.people .lead-m .name{font-weight:700}
 .pt{font-weight:600;letter-spacing:-.035em}
 .ac h3{font-weight:600;letter-spacing:-.035em}
 .ac.on h3{font-weight:700;letter-spacing:-.045em}
@@ -542,7 +538,7 @@ h2{font-weight:650;letter-spacing:-.045em;line-height:1.3}
     <div class="wrap">
       <div class="head"><div><h2>조직 구성원</h2><p>협회를 이끄는 임원을 소개합니다.</p></div></div>
       <ul class="people">
-        <li class="lead-m"><span class="mk" aria-hidden="true"></span><span class="role">이사장</span><span class="name">우성우</span></li>
+        <li><span class="mk" aria-hidden="true"></span><span class="role">이사장</span><span class="name">우성우</span></li>
         <li><span class="mk" aria-hidden="true"></span><span class="role">이사</span><span class="name">송근영</span></li>
         <li><span class="mk" aria-hidden="true"></span><span class="role">이사</span><span class="name">안다솜</span></li>
         <li><span class="mk" aria-hidden="true"></span><span class="role">이사</span><span class="name">김영백</span></li>
@@ -617,16 +613,16 @@ h2{font-weight:650;letter-spacing:-.045em;line-height:1.3}
     <div class="wrap">
       <div class="head"><div><h2>회원 농가의 현장</h2><p>회원 농가의 온실과 작물을 소개합니다. 사진을 누르면 크게 볼 수 있습니다.</p></div></div>
       <div class="farm" id="farm">
-        <figure><button type="button" aria-label="사진 1 크게 보기"><img src="assets/farm/01.jpg" alt="온실 내부 구조와 작물" width="900" height="900" loading="lazy"></button><figcaption>농가 이름 1</figcaption></figure>
-        <figure><button type="button" aria-label="사진 2 크게 보기"><img src="assets/farm/02.jpg" alt="유리 지붕으로 들어오는 햇빛" width="900" height="900" loading="lazy"></button><figcaption>농가 이름 2</figcaption></figure>
-        <figure><button type="button" aria-label="사진 3 크게 보기"><img src="assets/farm/03.jpg" alt="유인줄을 따라 자라는 작물" width="900" height="900" loading="lazy"></button><figcaption>농가 이름 3</figcaption></figure>
-        <figure><button type="button" aria-label="사진 4 크게 보기"><img src="assets/farm/04.jpg" alt="줄지어 자라는 작물" width="900" height="900" loading="lazy"></button><figcaption>농가 이름 4</figcaption></figure>
-        <figure><button type="button" aria-label="사진 5 크게 보기"><img src="assets/farm/05.jpg" alt="온실 통로와 작물" width="900" height="900" loading="lazy"></button><figcaption>농가 이름 5</figcaption></figure>
-        <figure><button type="button" aria-label="사진 6 크게 보기"><img src="assets/farm/06.jpg" alt="무성하게 자란 작물" width="900" height="900" loading="lazy"></button><figcaption>농가 이름 6</figcaption></figure>
-        <figure><button type="button" aria-label="사진 7 크게 보기"><img src="assets/farm/07.jpg" alt="온실 기둥과 작물" width="900" height="900" loading="lazy"></button><figcaption>농가 이름 7</figcaption></figure>
-        <figure><button type="button" aria-label="사진 8 크게 보기"><img src="assets/farm/08.jpg" alt="온실 가장자리 통로" width="900" height="900" loading="lazy"></button><figcaption>농가 이름 8</figcaption></figure>
+        <figure><button type="button" aria-label="익어 가는 토마토 크게 보기"><img src="assets/farm/01.jpg" alt="수확을 앞두고 붉게 익어 가는 토마토 줄" width="900" height="900" loading="lazy"></button><figcaption>익어 가는 토마토</figcaption></figure>
+        <figure><button type="button" aria-label="오이 재배 크게 보기"><img src="assets/farm/02.jpg" alt="노란 꽃이 핀 시설 오이" width="900" height="900" loading="lazy"></button><figcaption>오이 재배</figcaption></figure>
+        <figure><button type="button" aria-label="토마토 모종 정식 크게 보기"><img src="assets/farm/03.jpg" alt="코코피트 배지에 막 옮겨 심은 토마토 모종" width="900" height="900" loading="lazy"></button><figcaption>토마토 모종 정식</figcaption></figure>
+        <figure><button type="button" aria-label="높이 자란 토마토 크게 보기"><img src="assets/farm/04.jpg" alt="유인줄을 타고 높이 자란 토마토" width="900" height="900" loading="lazy"></button><figcaption>높이 자란 토마토</figcaption></figure>
+        <figure><button type="button" aria-label="온실 내부 전경 크게 보기"><img src="assets/farm/05.jpg" alt="유리온실 안에 줄지어 자라는 작물" width="900" height="900" loading="lazy"></button><figcaption>온실 내부 전경</figcaption></figure>
+        <figure><button type="button" aria-label="햇빛 드는 유리온실 크게 보기"><img src="assets/farm/06.jpg" alt="유리 지붕으로 햇빛이 드는 온실" width="900" height="900" loading="lazy"></button><figcaption>햇빛 드는 유리온실</figcaption></figure>
+        <figure><button type="button" aria-label="작물 줄과 통로 크게 보기"><img src="assets/farm/07.jpg" alt="온실 통로를 따라 이어진 작물" width="900" height="900" loading="lazy"></button><figcaption>작물 줄과 통로</figcaption></figure>
+        <figure><button type="button" aria-label="온실 구조와 작물 크게 보기"><img src="assets/farm/08.jpg" alt="온실 기둥 사이로 자라는 작물" width="900" height="900" loading="lazy"></button><figcaption>온실 구조와 작물</figcaption></figure>
       </div>
-      <p class="note">※ 사진 설명은 임시입니다. 사진을 더 넣으려면 위 줄을 복사해 파일 이름만 바꾸면 됩니다.</p>
+      <p class="note">※ 5~8번 사진은 임시 사진입니다. 실제 회원 농가 사진으로 바꿔 주세요.</p>
     </div>
   </section>
 
